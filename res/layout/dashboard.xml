@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+    <TextView
+  android:id="@+id/welcometext"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Welcome "
+  android:layout_alignParentTop="true"
+  android:layout_alignParentLeft="true"
+  />
+  <TextView
+  android:id="@+id/username"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_toRightOf="@+id/welcometext"
+  />
+  <TextView
+  android:id="@+id/comma"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text=","
+  android:layout_toRightOf="@id/username"
+  />
+<ListView
+android:id="@+id/menulist"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:dividerHeight="5dip"
+android:layout_below="@id/welcometext"/>
+</RelativeLayout>
